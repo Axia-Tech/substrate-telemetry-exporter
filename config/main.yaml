@@ -1,0 +1,6 @@
+subscribe:
+  chains:
+  - Development
+  validators:
+  - name: node0
+    address: 5D5HUyyooRU3DQKKVXQgvzuMzwdJBks5kwZHvaMgoC6PWgsa

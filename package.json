@@ -1,0 +1,36 @@
+{
+  "name": "substrate-telemetry-exporter",
+  "version": "0.1.0",
+  "description": "Prometheus exporter for substrate telemetry",
+  "main": "src/index.js",
+  "repository": "git@github.com:axia-tech/substrate-telemetry-exporter",
+  "author": "Sankar Boro <sankar.boro@zeeve.io>",
+  "license": "GPL-3.0",
+  "private": false,
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "mocha --reporter spec --recursive",
+    "start": "node src/index.js"
+  },
+  "bin": {
+    "substrate-telemetry-exporter": "./index.js"
+  },
+  "files": [
+    "/src",
+    "/config"
+  ],
+  "devDependencies": {
+    "eslint": "^6.0.1",
+    "mocha": "^6.1.4"
+  },
+  "dependencies": {
+    "commander": "^3.0.1",
+    "express": "^4.17.1",
+    "fs-extra": "^8.1.0",
+    "js-yaml": "^3.13.1",
+    "prom-client": "^11.5.3",
+    "reconnecting-websocket": "^4.2.0",
+    "ws": "^7.0.1"
+  }
+}
